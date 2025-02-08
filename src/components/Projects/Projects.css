@@ -1,0 +1,53 @@
+/* Cores dinâmicas para temas */
+.title-light {
+  color: var(--bs-primary);
+}
+
+.title-dark {
+  color: #fff;
+}
+
+.card-light {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-dark {
+  background-color: #1e1e1e;
+  color: #ddd;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Imagem dentro do card */
+.project-image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Ícones de tecnologia */
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.tech-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.tech-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Links alinhados */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}

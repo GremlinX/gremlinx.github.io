@@ -1,0 +1,62 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.theme-light {
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+  transition: background-color 1s ease-in-out;
+}
+
+.theme-dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  min-height: 100vh;
+  transition: background-color 1s ease-in-out;
+}
+
+/* NavBar Switch Icon */
+.icon-size {
+  font-size: 30px;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+.icon-size:hover {
+  transform: scale(1.2);
+}
+
+/* Blog container */
+.min-height-important {
+  min-height: calc(100vh - 56px) !important;
+}
+
+/* Linha Horizontal */
+.divider-dark {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+.divider-light {
+  border: 0;
+  border-top: 1px solid #444;
+  margin: 15px 0;
+}
+
+/* Footer */
+footer {
+
+}
+
+@media (max-width: 576px) {
+  .profile-img {
+    max-height: 350px !important;
+  }
+}
