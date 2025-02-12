@@ -18,7 +18,7 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <ThemeProvider>
-      <Router basename="/portfolio">
+      <Router>
         <Navbar />
         <AppRoutes />
       </Router>
