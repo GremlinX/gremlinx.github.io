@@ -11,7 +11,7 @@ export const Contact = () => {
   const textStyle = theme === "dark" ? "text-light" : "text-muted";
     
   const handleSendEmail = () => {
-      const email = "meuemail@email.com";
+      const email = "marcelo-ito@hotmail.com";
       const subject = "Contato via Portfólio";
       const body = encodeURIComponent(`Mensagem enviada através do seu portfólio:\n\n${message}`);
       window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;

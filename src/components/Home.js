@@ -23,7 +23,7 @@ export const Home = () => {
           Bem-vindo ao Meu Portfólio
         </h1>
         <p className={`lead ${theme === "light" ? "text-secondary" : "text-light"}`}>
-          Desenvolvedor Full Stack | React | Spring Boot | SQL
+          QA Professional | Fullstack Developer
         </p>
 
         <div className={`container d-flex align-items-center justify-content-center ${bgClass} p-5 rounded`}>

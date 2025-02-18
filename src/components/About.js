@@ -33,35 +33,26 @@ export const About = () => {
           <p
             className={`${textStyle} fs-5 text-lg-start text-md-center text-sm-center`}
           >
-            Sou formado em <b>Análise e Desenvolvimento de Sistemas</b> e tenho
-            um forte interesse no aprendizado contínuo, sempre explorando novas
-            tecnologias mas priorizando e aprimorando as minhas
-            habilidades. Meu foco principal está em{" "}
-            <b>React, Spring Boot, SQL e Cypress</b>, além de expandir meus
-            conhecimentos em <b>análise de dados e inteligência artificial</b>.
+            Formado em <b>Análise e Desenvolvimento de Sistemas</b>, tenho
+            experiência comprovada em
+            <b>React</b>, <b>Spring Boot</b>, <b>SQL</b> e <b>Cypress</b>,
+            sempre aprimorando minhas habilidades e explorando novas tecnologias
+            e áreas da TI.
           </p>
           <p
             className={`${textStyle} fs-5 text-lg-start text-md-center text-sm-center`}
           >
-            Atualmente, trabalho como <b>QA (Quality Assurance)</b>, utilizando{" "}
-            <b>Cypress e Jenkins</b> para automação de testes e melhoria dos
-            processos de qualidade. Tenho experiência com{" "}
-            <b>metodologias ágeis (Scrum)</b>, o que me permite atuar de forma
-            colaborativa e eficiente em equipes multidisciplinares.
+            Atualmente, atuo como <b>QA</b>, automatizando testes com{" "}
+            <b>Cypress</b> e <b>Jenkins</b> para garantir a qualidade dos
+            processos.
           </p>
           <p
             className={`${textStyle} fs-5 text-lg-start text-md-center text-sm-center`}
           >
-            Além disso, possuo experiência com <b>gerenciamento de pessoas</b>,
-            facilitando a comunicação e o alinhamento de objetivos dentro dos
-            times com os quais colaboro.
-          </p>
-          <p
-            className={`${textStyle} fs-5 text-lg-start text-md-center text-sm-center`}
-          >
-            Meu objetivo é continuar evoluindo e
-            agregando valor por meio da tecnologia, sempre em busca de soluções
-            inovadoras e eficientes.
+            Tenho experiência com metodologias ágeis, colaborando de forma
+            eficiente em equipes multidisciplinares. Além disso, possuo vivência
+            em gestão de pessoas, facilitando a comunicação e o alinhamento de
+            objetivos nos times.
           </p>
         </div>
 
@@ -93,7 +84,7 @@ export const About = () => {
             </div>
           </div>
         </div>
-        
+
         <div className={`container mt-5 p-5 rounded ${bgClass}`}>
           <div className="col">
             <h3
