@@ -6,7 +6,8 @@ import { useTheme } from "./context/ThemeContext";
 export const Home = () => {
   const { theme } = useTheme();
 
-  const bgClass = theme === "dark" ? "bg-dark text-white" : "bg-light text-dark shadow-lg";
+  const bgClass =
+    theme === "dark" ? "bg-dark text-white" : "bg-light text-dark shadow-lg";
   const textStyle = theme === "dark" ? "text-light" : "bg-light text-muted";
 
   return (
@@ -19,14 +20,24 @@ export const Home = () => {
         transition={{ duration: 0.5 }}
         className={`container text-center mt-5`}
       >
-        <h1 className={`display-4 ${theme === "light" ? "text-primary" : "text-light"}`}>
+        <h1
+          className={`display-4 ${
+            theme === "light" ? "text-primary" : "text-light"
+          }`}
+        >
           Bem-vindo ao Meu Portfólio
         </h1>
-        <p className={`lead ${theme === "light" ? "text-secondary" : "text-light"}`}>
+        <p
+          className={`lead ${
+            theme === "light" ? "text-secondary" : "text-light"
+          }`}
+        >
           QA Professional | Fullstack Developer
         </p>
 
-        <div className={`container d-flex align-items-center justify-content-center ${bgClass} p-5 rounded`}>
+        <div
+          className={`container d-flex align-items-center justify-content-center ${bgClass} p-5 rounded`}
+        >
           <div className="row w-100 align-items-center">
             {/* Imagem */}
             <div className="col-lg-5 d-flex justify-content-center">
@@ -48,17 +59,19 @@ export const Home = () => {
             <div className="col-lg-7 d-flex flex-column justify-content-center text-center text-lg-start p-4">
               <h2 className={`display-5 ${textStyle}`}>Eu sou Marcelo Ito</h2>
               <p className={`lead ${textStyle}`}>
-              Profissional de QA com experiência em desenvolvimento full stack 
-              e interesse em análise de dados e IA para aprimorar testes e automação.
+                Profissional de QA com experiência em desenvolvimento full stack
+                e interesse em análise de dados e IA para aprimorar testes e
+                automação.
               </p>
-              <a 
+              <a
                 href={`${process.env.PUBLIC_URL}/docs/Curriculo_MarceloIto_BSB.pdf`}
                 download="Curriculo_MarceloIto_BSB.pdf"
-                className={`btn btn-${theme === "light" ? "primary" : "outline-light"} btn-lg mt-3`}
+                className={`btn btn-${
+                  theme === "light" ? "primary" : "outline-light"
+                } btn-lg mt-3`}
               >
                 📄 Baixar Currículo
               </a>
-
             </div>
           </div>
         </div>
