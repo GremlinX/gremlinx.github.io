@@ -2,6 +2,7 @@ import React from "react";
 import { FaJava, FaDatabase, FaTools } from "react-icons/fa";
 import { MdOutlineWeb } from "react-icons/md";
 import { SiCoursera, SiUdemy } from "react-icons/si";
+import { IoIosInfinite } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useTheme } from "./context/ThemeContext";
@@ -28,25 +29,13 @@ export const About = () => {
           <p
             className={`${textStyle} fs-5 text-lg-start text-md-center text-sm-center`}
           >
-            Formado em <b>Análise e Desenvolvimento de Sistemas</b>, tenho
-            experiência comprovada em <b>React</b>, <b>Spring Boot</b>,{" "}
-            <b>SQL</b> e <b>Cypress</b>, sempre aprimorando minhas habilidades e
-            explorando novas tecnologias das áreas da TI.
-          </p>
-          <p
-            className={`${textStyle} fs-5 text-lg-start text-md-center text-sm-center`}
-          >
-            Atualmente, atuo como <b>QA</b>, automatizando testes com{" "}
-            <b>Cypress</b> e <b>Jenkins</b> para garantir a qualidade dos
-            processos.
-          </p>
-          <p
-            className={`${textStyle} fs-5 text-lg-start text-md-center text-sm-center`}
-          >
-            Tenho experiência com <b>metodologias ágeis</b>, colaborando de
-            forma eficiente em equipes multidisciplinares. Além disso, possuo
-            vivência em gestão de pessoas, facilitando a comunicação e o
-            alinhamento de objetivos nos times.
+            <b>Desenvolvedor Full Stack</b> e <b>Especialista QA</b>, formado em{" "}
+            <b>Análise e Desenvolvimento de Sistemas</b>. Tenho experiência com
+            <b>React</b>, <b>Spring Boot</b>, <b>SQL</b> e automação de testes
+            com <b>Cypress</b> e <b>Jenkins</b>. Trabalho em{" "}
+            <b>ambientes ágeis</b> e colaborativos, unindo habilidades técnicas
+            e de gestão para otimizar processos e alinhar objetivos dentro das
+            equipes.
           </p>
         </div>
 
@@ -66,7 +55,7 @@ export const About = () => {
                   "Bootstrap",
                   "jQuery",
                   "JavaScript",
-                  "TypeScript"
+                  "TypeScript",
                 ]}
                 theme={theme}
               />
@@ -83,9 +72,15 @@ export const About = () => {
                 theme={theme}
               />
               <SkillCard
-                icon={<FaTools />}
+                icon={<IoIosInfinite />}
                 title="Automação e CI/CD"
                 skills={["Cypress", "Jenkins", "Python"]}
+                theme={theme}
+              />
+               <SkillCard
+                icon={<FaTools />}
+                title="Ferramentas de Desenvolvimento"
+                skills={["Postman", "Swagger UI", "VSCode", "Git"]}
                 theme={theme}
               />
             </div>
@@ -103,7 +98,7 @@ export const About = () => {
           <h2 className={`text-center ${textClass} fw-bold mb-4`}>Cursos</h2>
           <div className="row">
             <CourseCard
-              icon="📚"
+              icon="🌐"
               title="Língua Inglesa"
               details="CNA School"
               theme={theme}
@@ -121,7 +116,7 @@ export const About = () => {
               theme={theme}
             />
             <CourseCard
-              icon="🔗"
+              icon="📚"
               title="Formações e Cursos da Alura"
               link="https://cursos.alura.com.br/user/marcelo-ito0/fullCertificate/8e3b53f7a62055f39bca27c90fcdc02b"
               theme={theme}
