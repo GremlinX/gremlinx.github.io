@@ -1,4 +1,5 @@
 import { SiReact, SiSpringboot, SiBootstrap } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 import { DiMsqlServer } from "react-icons/di";
 
 export const projects = [
@@ -30,6 +31,19 @@ export const projects = [
     image: [`${process.env.PUBLIC_URL}/assets/images/ModeloRelacionalSQL.png`],
     technologies: [DiMsqlServer],
     github: "https://github.com/GremlinX/basic-university-sql",
+    liveDemo: "#",
+  },
+  {
+    title: "Projeto 4 - Newsletter API",
+    description:
+      "Este projeto é uma aplicação estilo newsletter desenvolvida com Spring Boot e React. Ela se integra com a World News API para buscar notícias atuais de várias fontes do mundo e apresentá-las aos usuários. Também serve como um ambiente de aprendizado para aprimorar as habilidades em Java e Spring Boot.",
+    image: [
+      `${process.env.PUBLIC_URL}/assets/images/newslettercover.jpg`,
+      `${process.env.PUBLIC_URL}/assets/images/GremNews_1.png`,
+      `${process.env.PUBLIC_URL}/assets/images/GremNews_2.png`,
+    ],
+    technologies: [SiReact, SiSpringboot, BiLogoPostgresql],
+    github: "https://github.com/GremlinX/NewsletterAPI",
     liveDemo: "#",
   },
 ];

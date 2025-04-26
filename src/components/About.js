@@ -106,12 +106,14 @@ export const About = () => {
             <CourseCard
               icon=<SiUdemy />
               title="Complete 2023 Web Development Bootcamp"
+              link="https://ude.my/UC-7e99687e-1459-4089-8a7f-dffecdda68aa"
               details="Udemy"
               theme={theme}
             />
             <CourseCard
               icon=<SiUdemy />
-              title="Java COMPLETO 2023 POO + Projetos"
+              title="Java COMPLETO POO + Projetos"
+              link="https://ude.my/UC-ee8e8cb3-8039-4539-b47e-2214eb250447"
               details="Udemy"
               theme={theme}
             />
