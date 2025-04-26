@@ -23,4 +23,13 @@ export const projects = [
     github: "https://github.com/GremlinX/basic-spring-crud",
     liveDemo: "#",
   },
+  {
+    title: "Projeto 3 - Banco de Dados para Gestão Universitária",
+    description:
+      "Este projeto consiste em um banco de dados relacional para a gestão acadêmica de uma universidade. Ele está voltado para fins educativos e serve como exemplo para estudantes de áreas relacionadas como: computação, administração e gestão de dados. Este documento apresenta explicações de forma simples e fácil de entender, até para quem não tem experiência na área.",
+    image: [`${process.env.PUBLIC_URL}/assets/images/ModeloRelacionalSQL.png`],
+    technologies: [DiMsqlServer],
+    github: "https://github.com/GremlinX/basic-university-sql",
+    liveDemo: "#",
+  },
 ];

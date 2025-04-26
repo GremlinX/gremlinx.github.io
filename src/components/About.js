@@ -30,7 +30,7 @@ export const About = () => {
             className={`${textStyle} fs-5 text-lg-start text-md-center text-sm-center`}
           >
             <b>Desenvolvedor Full Stack</b> e <b>Especialista QA</b>, formado em{" "}
-            <b>Análise e Desenvolvimento de Sistemas</b>. Tenho experiência com
+            <b>Análise e Desenvolvimento de Sistemas</b>. Tenho experiência com{" "}
             <b>React</b>, <b>Spring Boot</b>, <b>SQL</b> e automação de testes
             com <b>Cypress</b> e <b>Jenkins</b>. Trabalho em{" "}
             <b>ambientes ágeis</b> e colaborativos, unindo habilidades técnicas
