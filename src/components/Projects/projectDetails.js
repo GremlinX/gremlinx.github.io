@@ -1,4 +1,5 @@
-import { SiReact, SiSpringboot, SiBootstrap } from "react-icons/si";
+import { SiReact, SiSpringboot, SiBootstrap, SiNumpy } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiMsqlServer } from "react-icons/di";
 
@@ -44,6 +45,17 @@ export const projects = [
     ],
     technologies: [SiReact, SiSpringboot, BiLogoPostgresql],
     github: "https://github.com/GremlinX/NewsletterAPI",
+    liveDemo: "#",
+  },
+  {
+    title: "Projeto 5 - Análise de Arrecadação de Impostos Federais no Brasil (2000–2024)",
+    description:
+      "Este repositório contém uma análise exploratória e descritiva dos dados de arrecadação de impostos federais no Brasil, abrangendo o período de 2000 a 2024. O estudo tem como objetivo identificar tendências, variações por estado e ano, e destacar os principais fatores que influenciaram a arrecadação federal durante esses anos. Além disso, este projeto tem como objetivo o aprendizado e o aprimoramento das habilidades em análise de dados, aplicando os conceitos adquiridos ao longo dos estudos.",
+    image: [
+      `${process.env.PUBLIC_URL}/assets/images/python.png`,
+    ],
+    technologies: [FaPython, SiNumpy],
+    github: "https://github.com/GremlinX/analise-arrecacao-imposto",
     liveDemo: "#",
   },
 ];
