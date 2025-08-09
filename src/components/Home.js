@@ -50,7 +50,7 @@ export const Home = () => {
                   src={`${process.env.PUBLIC_URL}/assets/images/profile_image.png`}
                   alt="Minha Foto"
                   className="profile-img img-fluid rounded w-100 h-auto"
-                  style={{ maxHeight: "450px", objectFit: "cover" }}
+                  style={{ maxHeight: "350px", objectFit: "cover" }}
                 />
               </motion.div>
             </div>

@@ -1,1 +1,2 @@
+npm run build > npm run deploy
 - Adiconar estudo de caso => Projeto BLOG

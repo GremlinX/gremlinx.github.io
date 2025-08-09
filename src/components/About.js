@@ -52,6 +52,7 @@ export const About = () => {
                 skills={[
                   "React",
                   "Angular",
+                  "Vue",
                   "Bootstrap",
                   "jQuery",
                   "JavaScript",
@@ -62,7 +63,7 @@ export const About = () => {
               <SkillCard
                 icon={<FaJava />}
                 title="Back-end"
-                skills={["Java (Spring Boot)", "Express", "Node"]}
+                skills={["Java (Spring Boot)", "C# (.NET)", "Express", "Node"]}
                 theme={theme}
               />
               <SkillCard
@@ -80,7 +81,7 @@ export const About = () => {
                <SkillCard
                 icon={<FaTools />}
                 title="Ferramentas de Desenvolvimento"
-                skills={["Postman", "Swagger UI", "VSCode", "Git"]}
+                skills={["Postman", "Swagger UI", "Docker", "VSCode", "Git"]}
                 theme={theme}
               />
             </div>
