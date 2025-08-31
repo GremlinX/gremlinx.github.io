@@ -119,6 +119,13 @@ export const About = () => {
               theme={theme}
             />
             <CourseCard
+              icon=<SiUdemy />
+              title="Vue - The Complete Guide (incl. Router & Composition API)"
+              link="https://ude.my/UC-ebf11284-a4aa-49a0-9ceb-eb4bc7425d15"
+              details="Udemy"
+              theme={theme}
+            />
+            <CourseCard
               icon="📚"
               title="Formações e Cursos da Alura"
               link="https://cursos.alura.com.br/user/marcelo-ito0/fullCertificate/8e3b53f7a62055f39bca27c90fcdc02b"

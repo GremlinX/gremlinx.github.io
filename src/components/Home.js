@@ -59,9 +59,10 @@ export const Home = () => {
             <div className="col-lg-7 d-flex flex-column justify-content-center text-center text-lg-start p-4">
               <h2 className={`display-5 ${textStyle}`}>Eu sou Marcelo Ito</h2>
               <p className={`lead ${textStyle}`}>
-                Profissional de QA com experiência em desenvolvimento full stack
-                e interesse em análise de dados e IA para aprimorar testes e
-                automação.
+                Desenvolvedor Fullstack com mais de 3 anos de experiência em QA.{" "} 
+                Interessado em análise de dados e inteligência artificial 
+                como forma de aprimorar habilidades técnicas e 
+                contribuir de forma mais estratégica no desenvolvimento de projetos.
               </p>
               <a
                 href={`${process.env.PUBLIC_URL}/docs/Curriculo_MarceloIto_BSB.pdf`}
