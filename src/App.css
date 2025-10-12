@@ -50,11 +50,6 @@ h5 {
   margin: 15px 0;
 }
 
-/* Footer */
-footer {
-
-}
-
 @media (max-width: 576px) {
   .profile-img {
     max-height: 350px !important;

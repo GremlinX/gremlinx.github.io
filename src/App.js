@@ -14,6 +14,7 @@ import { Contact } from "./components/Contact";
 import { ThemeProvider } from "./components/context/ThemeContext";
 import { Blog } from "./components/Blog";
 import { Footer } from "./components/Footer";
+import { CategoryView } from "./components/Category";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function AppRoutes() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<CategoryView />} />
       </Routes>
 
       {location.pathname !== "/blog" && <Footer />}
