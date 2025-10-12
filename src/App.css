@@ -50,6 +50,13 @@ h5 {
   margin: 15px 0;
 }
 
+pre {
+  background-color: var(--bs-body-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+
 @media (max-width: 576px) {
   .profile-img {
     max-height: 350px !important;

@@ -6,8 +6,12 @@ import { useTheme } from "./context/ThemeContext";
 
 // Componente customizado para estilizar o conteúdo markdown
 const MarkdownRenderer = ({ children, className }) => {
-  if (className === "language-js") {
+  if (className === "language-js" ||
+    className === "language-html"
+  ) {
     return <pre className="bg-dark text-white p-2 rounded">{children}</pre>;
+  } else {
+    return children;
   }
 };
 
@@ -62,13 +66,11 @@ export const CategoryView = () => {
               >
                 <div className="accordion-body">
                   {post.content ? (
-                    <ReactMarkdown
-                      components={{
-                        code: MarkdownRenderer,
-                      }}
-                    >
-                      {post.content}
-                    </ReactMarkdown>
+                    <div className="post">
+                      <ReactMarkdown>
+                        {post.content}
+                      </ReactMarkdown>
+                    </div>
                   ) : (
                     <p className={`${textStyle}`}>
                       Conteúdo ainda não disponível.
