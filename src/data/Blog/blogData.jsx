@@ -318,6 +318,26 @@ provide('greet', greet) // Fornece a função greet
     title: "Git",
     description:
       "branching, merge, rebase, comandos úteis e resolução de conflitos",
-    posts: [],
+    posts: [
+      {
+        id: 1,
+        title: "Atualizando feature com a develop",
+        slug: "atualizando-feature-com-a-develop",
+        content: `
+# Atualizando sua branch
+Já passou por momentos que você estava trabalhando em uma feature e que por algum motivo você precisou largar ela para fazer qualquer outra coisa e quando voltou, a branch \`develop\` estava a dezenas de commits a mais que sua feature?
+Pois bem, esse artigo é para você!
+
+Tudo o que você precisa fazer é seguir os seguintes passos para que você consiga alcançar a develop:
+1. \`git checkout develop\`. Como você está em buscar da develop atualizada você precisa estar nela para depois...
+2. \`git push orgin develop\` ... isso fará que você atualize a sua branch develop local com a branch develop da origin.
+3. \`git checkout feature/nome_da_feature\`. Com a branch develop atualizada, basta você conseguir trazer a develop para a sua branch através do comando...
+4. \`git merge origin develop\` ... Isto fará que você faça um merge com a branch da develop.
+5. A partir daqui você poderá enfrentar alguns conflitos para resolver, mas assim que resolvidos basta fazer um \`git commit\` seguido de um \`git push\`.
+
+Um texto simples e direto ao ponto, mas que pode salvar você e sua equipe de resolver grandes conflitos sem esse procedimento!
+        `
+      }
+    ],
   },
 ];

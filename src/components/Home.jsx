@@ -47,7 +47,7 @@ export const Home = () => {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src={`${process.env.PUBLIC_URL}/assets/images/profile_image.png`}
+                  src="/assets/images/profile_image.png"
                   alt="Minha Foto"
                   className="profile-img img-fluid rounded w-100 h-auto"
                   style={{ maxHeight: "350px", objectFit: "cover" }}
@@ -65,7 +65,7 @@ export const Home = () => {
                 contribuir de forma mais estratégica no desenvolvimento de projetos.
               </p>
               <a
-                href={`${process.env.PUBLIC_URL}/docs/Curriculo_MarceloIto_BSB.pdf`}
+                href={`${import.meta.env.BASE_URL}/docs/Curriculo_MarceloIto_BSB.pdf`}
                 download="Curriculo_MarceloIto_BSB.pdf"
                 className={`btn btn-${
                   theme === "light" ? "primary" : "outline-light"

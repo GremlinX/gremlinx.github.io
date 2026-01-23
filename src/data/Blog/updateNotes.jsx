@@ -5,4 +5,10 @@ export const updateNotes = [
       "Adicionado conteúdo sobre Vue 3 (2-Way Binding, Computed Properties, Watchers, Renderização Condicional, Loop, Emits, Provide + Inject)",
     ],
   },
+  {
+    date: "10/12/2025",
+    notes: [
+      "Adicionado conteúdo sobre Git (Atualizando sua feature com outras branches)",
+    ],
+  },
 ];
