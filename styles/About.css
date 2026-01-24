@@ -24,55 +24,140 @@
   --badge-text: #00344a;
   --button-bg: #ffffff;
   --button-text: #00344a;
-  background: radial-gradient(circle, rgba(0, 52, 74, 1) 0%, rgba(0,0,0,1) 100%);
+  background: radial-gradient(circle, rgba(0, 52, 74, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
-.about-container { background: var(--bg); color: var(--text); }
+.about-container {
+  background: var(--bg);
+  color: var(--text);
+}
 
 /* Seções */
-.about-section { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; text-align: center; }
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
 
 /* Título da seção */
-.section-title { font-size: 2rem; font-weight: 700; margin-bottom: 1rem; color: var(--text); }
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
 
 /* Texto da seção */
-.section-text { font-size: 1.1rem; max-width: 700px; line-height: 1.6; }
+.section-text {
+  font-size: 1.1rem;
+  max-width: 700px;
+  line-height: 1.6;
+}
 
 /* Skills grid e cards */
-.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; width: 100%; }
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
 
 .skill-card {
   background: var(--card-bg);
   border-radius: 1rem;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
-.skill-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+.skill-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 
-.skill-icon { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text); }
-.skill-title { font-weight: 600; margin-bottom: 0.75rem; }
-.skill-badges { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
-.skill-badge { padding: 0.3rem 0.8rem; border-radius: 0.5rem; font-size: 0.85rem; font-weight: 500; background: var(--badge-bg); color: var(--badge-text); }
+.theme-dark .skill-card:hover {
+  border: 1px solid #ececec;
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.skill-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.skill-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background: var(--badge-bg);
+  color: var(--badge-text);
+}
 
 /* Cursos grid e cards */
-.courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; width: 100%; }
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
 
 .course-card {
   background: var(--card-bg);
   border-radius: 1rem;
   padding: 1.5rem;
   text-align: center;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.course-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 
-.course-icon { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text); }
-.course-title { font-weight: 600; margin-bottom: 0.5rem; }
-.course-details { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-bottom: 0.5rem; }
-.course-button { display: inline-block; padding: 0.5rem 1rem; border-radius: 0.5rem; text-decoration: none; font-weight: 500; background: var(--button-bg); color: var(--button-text); transition: transform 0.2s, opacity 0.2s; }
-.course-button:hover { transform: scale(1.05); opacity: 0.85; }
+.course-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.course-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.course-details {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.course-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  background: var(--button-bg);
+  color: var(--button-text);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.course-button:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}

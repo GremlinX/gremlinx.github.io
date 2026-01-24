@@ -39,8 +39,6 @@ const ProjectLinks = ({ github, liveDemo, theme }) => (
 
 const ProjectCard = ({ project, theme }) => (
   <motion.div
-    whileHover={{ scale: 1.03 }}
-    transition={{ duration: 0.3 }}
     className={`project-card ${theme}`}
   >
     <Carousel src={project.image} alt={project.title} />

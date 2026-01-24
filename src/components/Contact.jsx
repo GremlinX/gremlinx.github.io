@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTheme } from "./context/ThemeContext";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
 import "../../styles/Contacts.css";
 
 export const Contact = ({id}) => {
@@ -34,7 +35,7 @@ export const Contact = ({id}) => {
               canais abaixo:
             </p>
             <p className="contact-text">
-              <b>LinkedIn:</b>{" "}
+              <FaLinkedin />{" "}
               <a
                 href="https://www.linkedin.com/in/marcelo-ito-096460144/"
                 target="_blank"
@@ -44,16 +45,16 @@ export const Contact = ({id}) => {
               </a>
             </p>
             <p className="contact-text">
-              <b>GitHub:</b>{" "}
+              <FaGithub />{" "}
               <a href="https://github.com/GremlinX" target="_blank" rel="noreferrer">
                 GremlinX
               </a>
             </p>
             <p className="contact-text">
-              <b>Email:</b> marcelo-ito@hotmail.com
+              <FaEnvelope /> marcelo-ito@hotmail.com
             </p>
             <p className="contact-text">
-              <b>Telefone:</b> +55 (47) 99149-5505
+              <FaPhone /> +55 (47) 99149-5505
             </p>
           </div>
 

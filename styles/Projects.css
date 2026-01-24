@@ -5,7 +5,6 @@
 /* Container principal */
 .projects-container {
   padding: 4rem 2rem;
-  transition: background 0.3s, color 0.3s;
   min-height: 100vh;
 }
 
@@ -17,9 +16,10 @@
 }
 
 .projects-container.dark {
-  --bg: #00344a;
-  --text: #ffffff;
   --accent: #00b4d8;
+  --background: #00344a;
+  --text: #ffffff;
+  background: radial-gradient(circle, rgba(0, 52, 74, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
 .projects-container {
@@ -46,25 +46,26 @@
 /* Card de projeto */
 .project-card {
   background: var(--bg);
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.75rem;
   overflow: hidden;
   max-width: 400px;
   width: 100%;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card.dark {
   background: #00344a;
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-card.dark:hover {
+  border: 1px solid #ececec;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
 /* Conteúdo do card */
@@ -166,5 +167,5 @@
 
 .project-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }

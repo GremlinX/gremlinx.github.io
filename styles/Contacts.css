@@ -17,8 +17,9 @@
 }
 
 .contact-container.dark {
-  --bg: #00344a;
+  --background: #00344a;
   --text: #ffffff;
+  background: radial-gradient(circle, rgba(0, 52, 74, 1) 0%, rgba(0, 0, 0, 1) 100%);
   --accent: #00b4d8;
 }
 
@@ -41,12 +42,19 @@
   flex-wrap: wrap;
   gap: 3rem;
   justify-content: center;
+  align-items: center;
 }
 
 /* Informações de contato */
 .contact-info {
-  flex: 1 1 300px;
-  max-width: 450px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  backdrop-filter: blur(6px);
+}
+
+.contact-container.light .contact-info {
+  background: #f8f9fa;
 }
 
 .contact-text {
@@ -134,6 +142,13 @@
 .contact-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Icones */
+.contact-text svg {
+  margin-right: 0.5rem;
+  color: var(--accent);
+  vertical-align: middle;
 }
 
 /* Responsividade */

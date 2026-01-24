@@ -26,9 +26,14 @@
 }
 
 .navbar-container.dark {
-  --bg: #00344a;
   --text: #ffffff;
   --link-hover: #00b4d8;
+    background: linear-gradient(
+    180deg,
+    rgba(0, 52, 74, 0.95) 0%,
+    rgba(0, 20, 30, 0.95) 100%
+  );
+  backdrop-filter: blur(10px);
 }
 
 .navbar-container {
@@ -114,7 +119,6 @@
     left: -250px; /* escondida inicialmente */
     flex-direction: column;
     padding: 2rem 1rem;
-    background: var(--bg);
     transition: left 0.3s ease;
     z-index: 1000;
   }
@@ -135,6 +139,7 @@
     background: none;
     border: none;
     z-index: 1100;
+    border-radius: 5px;
   }
 
   .navbar-links {

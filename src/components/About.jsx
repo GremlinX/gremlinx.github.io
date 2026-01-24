@@ -22,7 +22,7 @@ export const About = ({id}) => {
       >
         {/* Sobre Mim */}
         <section className="about-section" id={id}>
-          <h2 className="section-title">Sobre Mim</h2>
+          <h1 className="section-title">Sobre Mim</h1>
           <p className="section-text">
             <b>Desenvolvedor Fullstack</b> e <b>QA Senior</b>, formado em{" "}
             <b>Análise e Desenvolvimento de Sistemas</b>. Tenho experiência com{" "}
@@ -36,7 +36,7 @@ export const About = ({id}) => {
 
         {/* Habilidades */}
         <section className="about-section">
-          <h2 className="section-title">Habilidades</h2>
+          <h1 className="section-title">Habilidades</h1>
           <div className="skills-grid">
             <SkillCard
               icon={<MdOutlineWeb />}
@@ -81,7 +81,7 @@ export const About = ({id}) => {
 
         {/* Cursos */}
         <section className="about-section">
-          <h2 className="section-title">Cursos</h2>
+          <h1 className="section-title">Cursos</h1>
           <div className="courses-grid">
             <CourseCard
               icon="🌐"
