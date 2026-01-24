@@ -1,0 +1,170 @@
+/* =======================
+   PROJECTS
+   ======================= */
+
+/* Container principal */
+.projects-container {
+  padding: 4rem 2rem;
+  transition: background 0.3s, color 0.3s;
+  min-height: 100vh;
+}
+
+/* Temas */
+.projects-container.light {
+  --bg: #ffffff;
+  --text: #00344a;
+  --accent: #0077b6;
+}
+
+.projects-container.dark {
+  --bg: #00344a;
+  --text: #ffffff;
+  --accent: #00b4d8;
+}
+
+.projects-container {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Título */
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Grid de projetos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Card de projeto */
+.project-card {
+  background: var(--bg);
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card.dark {
+  background: #00344a;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Conteúdo do card */
+.project-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-title.dark {
+  color: #ffffff;
+}
+
+.project-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+/* Divider */
+.project-divider {
+  border: none;
+  border-top: 2px solid var(--accent);
+  width: 50px;
+  margin: 1rem auto;
+}
+
+.project-divider.dark {
+  border-top-color: #00b4d8;
+}
+
+/* Tech icons */
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tech-icon {
+  font-size: 2rem;
+  transition: transform 0.3s, color 0.3s;
+  color: var(--accent);
+}
+
+.tech-icon:hover {
+  transform: scale(1.3);
+  color: var(--text);
+}
+
+/* Links do projeto */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.project-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-btn.github-btn.light {
+  background: #00344a;
+  color: #ffffff;
+}
+
+.project-btn.github-btn.dark {
+  background: #ffffff;
+  color: #00344a;
+}
+
+.project-btn.live-btn.light {
+  border: 2px solid #0077b6;
+  color: #0077b6;
+  background: transparent;
+}
+
+.project-btn.live-btn.dark {
+  border: 2px solid #00b4d8;
+  color: #00b4d8;
+  background: transparent;
+}
+
+.project-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}

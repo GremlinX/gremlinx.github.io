@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useTheme } from "./context/ThemeContext";
 import { motion, AnimatePresence } from "framer-motion";
-// import "./Contact.css";
+import "../../styles/Contacts.css";
 
-export const Contact = () => {
+export const Contact = ({id}) => {
   const [message, setMessage] = useState("");
   const { theme } = useTheme();
 
@@ -26,7 +26,7 @@ export const Contact = () => {
         transition={{ duration: 0.5 }}
         className={`contact-container ${theme}`}
       >
-        <h2 className="contact-title">Contato</h2>
+        <h2 className="contact-title" id={id}>Contato</h2>
         <div className="contact-grid">
           <div className="contact-info">
             <p className="contact-text">

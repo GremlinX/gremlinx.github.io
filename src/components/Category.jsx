@@ -15,7 +15,7 @@ const MarkdownRenderer = ({ children, className }) => {
   }
 };
 
-export const CategoryView = () => {
+export const CategoryView = ({sectionId}) => {
   const { id } = useParams();
   const { theme } = useTheme();
   const bgClass =
@@ -36,7 +36,7 @@ export const CategoryView = () => {
   }
 
   return (
-    <div className="container py-5">
+    <div className="container py-5" id={sectionId}>
       <h2 className={`mb-4 ${textStyle}`}>
         {category.icon} {category.title}
       </h2>

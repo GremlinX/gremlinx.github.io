@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { UpdateModal } from "./UpdateModal";
 
 
-export const Blog = () => {
+export const Blog = ({id}) => {
   const { theme } = useTheme();
   const [showModal, setShowModal] = useState(false);
 
@@ -31,7 +31,7 @@ export const Blog = () => {
           exit={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="container py-5">
+          <div className="container py-5" id={id}>
             <h1
               className={`mb-4 fw-bold text-center ${textClass}`}
               style={{ cursor: "pointer"}}

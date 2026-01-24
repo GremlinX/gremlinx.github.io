@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import { projects } from "./projectDetails";
 import Carousel from "./Carousel";
-// import "./Projects.css";
+import "../../../styles/Projects.css";
 
 const TechIcons = ({ technologies }) => (
   <div className="tech-icons">
@@ -54,7 +54,7 @@ const ProjectCard = ({ project, theme }) => (
   </motion.div>
 );
 
-export const Projects = () => {
+export const Projects = ({id}) => {
   const { theme } = useTheme();
 
   return (
@@ -67,7 +67,7 @@ export const Projects = () => {
         transition={{ duration: 0.5 }}
         className={`projects-container ${theme}`}
       >
-        <h2 className={`projects-title ${theme}`}>Meus Projetos</h2>
+        <h2 className={`projects-title ${theme}`} id={id}>Meus Projetos</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} theme={theme} />

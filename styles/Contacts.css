@@ -1,0 +1,145 @@
+/* =======================
+   CONTACT
+   ======================= */
+
+/* Container principal */
+.contact-container {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Temas */
+.contact-container.light {
+  --bg: #ffffff;
+  --text: #00344a;
+  --accent: #0077b6;
+}
+
+.contact-container.dark {
+  --bg: #00344a;
+  --text: #ffffff;
+  --accent: #00b4d8;
+}
+
+.contact-container {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Título */
+.contact-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+/* Grid */
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+/* Informações de contato */
+.contact-info {
+  flex: 1 1 300px;
+  max-width: 450px;
+}
+
+.contact-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.contact-text a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-text a:hover {
+  text-decoration: underline;
+}
+
+/* Formulário */
+.contact-form-container {
+  flex: 1 1 300px;
+  max-width: 450px;
+  background: var(--bg);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s;
+}
+
+.contact-form-container:hover {
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.form-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Inputs */
+.contact-input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--accent);
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background: transparent;
+  color: var(--text);
+}
+
+.contact-input::placeholder {
+  color: rgba(0,0,0,0.5);
+}
+
+.contact-container.dark .contact-input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.contact-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(0,180,216,0.3);
+}
+
+/* Botão */
+.contact-btn {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background: var(--accent);
+  color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

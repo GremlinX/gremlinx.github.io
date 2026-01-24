@@ -1,7 +1,8 @@
 import { useTheme } from "./context/ThemeContext";
 import { motion, AnimatePresence } from "framer-motion";
+import "../../styles/Home.css"
 
-export const Home = () => {
+export const Home = ({id}) => {
   const { theme } = useTheme();
 
   return (
@@ -13,7 +14,7 @@ export const Home = () => {
         exit={{ opacity: 0, y: -30 }}
         transition={{ duration: 0.5 }}
       >
-        <div className={`home-container ${theme}`}>
+        <div className={`home-container ${theme}`} id={id}>
           {/* Imagem */}
           <img
             src="/assets/images/profile_image.png"

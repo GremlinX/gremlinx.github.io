@@ -5,9 +5,9 @@ import { SiCoursera, SiUdemy } from "react-icons/si";
 import { IoIosInfinite } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "./context/ThemeContext";
-// import "./About.css";
+import "../../styles/About.css";
 
-export const About = () => {
+export const About = ({id}) => {
   const { theme } = useTheme();
 
   return (
@@ -21,7 +21,7 @@ export const About = () => {
         transition={{ duration: 0.5 }}
       >
         {/* Sobre Mim */}
-        <section className="about-section">
+        <section className="about-section" id={id}>
           <h2 className="section-title">Sobre Mim</h2>
           <p className="section-text">
             <b>Desenvolvedor Fullstack</b> e <b>QA Senior</b>, formado em{" "}
@@ -163,7 +163,7 @@ function SkillCard({ icon, title, skills, theme }) {
 function CourseCard({ icon, title, details, link, theme }) {
   return (
     <motion.div
-      className={`course-card ${theme}`}
+      className="skill-card"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -30 }}
