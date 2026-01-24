@@ -52,7 +52,7 @@ export const projects = [
     description:
       "Este repositório contém uma análise exploratória e descritiva dos dados de arrecadação de impostos federais no Brasil, abrangendo o período de 2000 a 2024. O estudo tem como objetivo identificar tendências, variações por estado e ano, e destacar os principais fatores que influenciaram a arrecadação federal durante esses anos. Além disso, este projeto tem como objetivo o aprendizado e o aprimoramento das habilidades em análise de dados, aplicando os conceitos adquiridos ao longo dos estudos.",
     image: [
-      `/assets/images/python.png`,
+      `https://placehold.co/600x400?text=Python - Análise de Dados`,
     ],
     technologies: [FaPython, SiNumpy],
     github: "https://github.com/GremlinX/analise-arrecacao-imposto",

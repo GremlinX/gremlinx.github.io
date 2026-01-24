@@ -1,35 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { useTheme } from "./context/ThemeContext";
+import {
+  AiOutlineUser,
+  AiOutlineProject,
+  AiOutlineMail,
+  AiOutlineRead,
+} from "react-icons/ai";
 import { CiLight, CiDark } from "react-icons/ci";
-import {FormControlLabel, Switch} from '@mui/material';
-import * as bootstrap from "bootstrap"
 
 export const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(true); // Lateral sempre aberta por padrão
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
-        <Link className="navbar-brand" to="/">Meu Portfólio</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item"><Link className="nav-link" to="/about">Sobre</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/projects">Projetos</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/contact">Contato</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/blog">Blog</Link></li>
-
-            <FormControlLabel
-              control={<Switch onClick={toggleTheme} />}
-              label={theme === "dark" ? <CiDark className="icon-size" /> : <CiLight className="icon-size" />}
-              className="text-light"
-            />
-          </ul>
-        </div>
+    <aside className={`navbar-container ${theme}`}>
+      {/* Logo / Brand */}
+      <div className="navbar-brand-container">
+        <Link className="navbar-brand" to="/">
+          <AiOutlineUser className="brand-icon" />
+        </Link>
       </div>
-    </nav>
-  )};
+
+      {/* Menu Links */}
+      <nav className={`navbar-links ${menuOpen ? "open" : ""}`}>
+        <Link className="nav-link" to="/about">
+          <AiOutlineUser className="nav-icon" />
+          <span className="nav-text">Sobre</span>
+        </Link>
+
+        <Link className="nav-link" to="/projects">
+          <AiOutlineProject className="nav-icon" />
+          <span className="nav-text">Projetos</span>
+        </Link>
+
+        <Link className="nav-link" to="/contact">
+          <AiOutlineMail className="nav-icon" />
+          <span className="nav-text">Contato</span>
+        </Link>
+
+        <Link className="nav-link" to="/blog">
+          <AiOutlineRead className="nav-icon" />
+          <span className="nav-text">Blog</span>
+        </Link>
+
+        <button className="theme-toggle" onClick={toggleTheme}>
+          {theme === "dark" ? <CiDark /> : <CiLight />}
+        </button>
+      </nav>
+    </aside>
+  );
+};
