@@ -35,7 +35,7 @@ export const Navbar = () => {
     { to: "/about", icon: <AiOutlineUser />, text: "Sobre" },
     { to: "/projects", icon: <AiOutlineProject />, text: "Projetos" },
     { to: "/contact", icon: <AiOutlineMail />, text: "Contato" },
-    { to: "/blog", icon: <AiOutlineRead />, text: "Blog" },
+    // { to: "/blog", icon: <AiOutlineRead />, text: "Blog" },
   ];
 
   return (

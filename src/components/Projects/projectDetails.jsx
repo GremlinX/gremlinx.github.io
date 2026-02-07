@@ -2,16 +2,21 @@ import { SiReact, SiSpringboot, SiBootstrap, SiNumpy } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiMsqlServer } from "react-icons/di";
+import { TbBrandCSharp } from "react-icons/tb";
+import SpringBootCover from "../../../assets/images/SpringBoot.jpg"
+import ModeloRelacionalSQL from "../../../assets/images/ModeloRelacionalSQL.png"
+import ReactCover from "../../../assets/images/ReactJS.png"
+import ProjetoLembranca from "../../../assets/images/ProjetoLembranca.png"
+import NewsletterCover from "../../../assets/images/newslettercover.jpg"
+import Gremnews1 from "../../../assets/images/GremNews_1.png"
+import Gremnews2 from "../../../assets/images/GremNews_2.png"
 
 export const projects = [
   {
     title: "Projeto 1 - MemoryBox",
     description:
       "Uma aplicação para armazenar e compartilhar memórias, permitindo salvar textos e imagens de momentos importantes.",
-    image: [
-      `/assets/images/ReactJS.png`,
-      `/assets/images/ProjetoLembranca.png`,
-    ],
+    image: [ ReactCover, ProjetoLembranca ],
     technologies: [SiReact, SiBootstrap],
     github: "https://github.com/GremlinX/MemoryBox",
     liveDemo: "https://memory-box-ten.vercel.app/",
@@ -20,7 +25,7 @@ export const projects = [
     title: "Projeto 2 - Sistema Para Livrarias",
     description:
       "Um sistema de gerenciamento de livros que permite criar, editar e excluir livros com integração a banco de dados.",
-    image: [`/assets/images/SpringBoot.jpg`],
+    image: [SpringBootCover],
     technologies: [SiSpringboot, DiMsqlServer],
     github: "https://github.com/GremlinX/basic-spring-crud",
     liveDemo: "#",
@@ -29,7 +34,7 @@ export const projects = [
     title: "Projeto 3 - Banco de Dados para Gestão Universitária",
     description:
       "Este projeto consiste em um banco de dados relacional para a gestão acadêmica de uma universidade. Ele está voltado para fins educativos e serve como exemplo para estudantes de áreas relacionadas como: computação, administração e gestão de dados. Este documento apresenta explicações de forma simples e fácil de entender, até para quem não tem experiência na área.",
-    image: [`/assets/images/ModeloRelacionalSQL.png`],
+    image: [ModeloRelacionalSQL],
     technologies: [DiMsqlServer],
     github: "https://github.com/GremlinX/basic-university-sql",
     liveDemo: "#",
@@ -38,11 +43,7 @@ export const projects = [
     title: "Projeto 4 - Newsletter API",
     description:
       "Este projeto é uma aplicação estilo newsletter desenvolvida com Spring Boot e React. Ela se integra com a World News API para buscar notícias atuais de várias fontes do mundo e apresentá-las aos usuários. Também serve como um ambiente de aprendizado para aprimorar as habilidades em Java e Spring Boot.",
-    image: [
-      `/assets/images/newslettercover.jpg`,
-      `/assets/images/GremNews_1.png`,
-      `/assets/images/GremNews_2.png`,
-    ],
+    image: [ NewsletterCover, Gremnews1, Gremnews2 ],
     technologies: [SiReact, SiSpringboot, BiLogoPostgresql],
     github: "https://github.com/GremlinX/NewsletterAPI",
     liveDemo: "#",
@@ -65,7 +66,7 @@ export const projects = [
     image: [
       `https://placehold.co/600x400?text=Discord Bot`,
     ],
-    technologies: [FaPython, SiNumpy],
+    technologies: [ TbBrandCSharp ],
     github: "https://github.com/GremlinX/discordbot",
     liveDemo: "#",
   },

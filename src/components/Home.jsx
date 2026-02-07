@@ -1,5 +1,6 @@
 import { useTheme } from "./context/ThemeContext";
 import { motion, AnimatePresence } from "framer-motion";
+import ProfileImage from "../../assets/images/profile_image.png"
 import "../../styles/Home.css"
 
 export const Home = ({id}) => {
@@ -17,7 +18,7 @@ export const Home = ({id}) => {
         <div className={`home-container ${theme}`} id={id}>
           {/* Imagem */}
           <img
-            src="/assets/images/profile_image.png"
+            src={ProfileImage}
             alt="Minha Foto"
             className="profile-image"
           />
