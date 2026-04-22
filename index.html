@@ -1,32 +1,91 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Portfólio de Marcelo Ito - Web Developer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO & Social Media -->
-  <meta property="og:title" content="Marcelo Ito - Portfolio" />
-  <meta property="og:description" content="Portfólio de Marcelo Ito - Desenvolvedor de Sistemas" />
-  <meta property="og:image" content="/assets/images/home_page.png" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <!-- ═══════════════════════════════════════════
+       IDENTIDADE & SEO BÁSICO
+  ═══════════════════════════════════════════ -->
+  <title>Marcelo Ito — Fullstack Developer</title>
+  <meta name="description" content="Portfólio de Marcelo Ito, desenvolvedor fullstack júnior especializado em .NET, Vue 3 e IA aplicada. Construindo experiências digitais completas — do banco de dados à interface." />
+  <meta name="keywords" content="Marcelo Ito, fullstack developer, .NET, Vue 3, PostgreSQL, Gemini AI, desenvolvedor, portfólio" />
+  <meta name="author" content="Marcelo Ito" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://gremlinx.github.io/" />
 
-  <!-- Google Fonts -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet"> -->
+  <!-- ═══════════════════════════════════════════
+       OPEN GRAPH (Facebook, LinkedIn, WhatsApp…)
+  ═══════════════════════════════════════════ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://gremlinx.github.io/" />
+  <meta property="og:site_name"   content="Marcelo Ito — Fullstack Developer" />
+  <meta property="og:title"       content="Marcelo Ito — Fullstack Developer" />
+  <meta property="og:description" content="Desenvolvedor fullstack júnior especializado em .NET, Vue 3 e IA aplicada. Confira meus projetos e skills." />
+  <meta property="og:image"       content="https://gremlinx.github.io/assets/images/og-cover.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"   content="Marcelo Ito — Fullstack Developer Portfolio" />
+  <meta property="og:locale"      content="pt_BR" />
 
-  <!-- PWA Manifest -->
+  <!-- ═══════════════════════════════════════════
+       TWITTER / X CARD
+  ═══════════════════════════════════════════ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:site"        content="@marceloito" />
+  <meta name="twitter:creator"     content="@marceloito" />
+  <meta name="twitter:title"       content="Marcelo Ito — Fullstack Developer" />
+  <meta name="twitter:description" content="Desenvolvedor fullstack júnior especializado em .NET, Vue 3 e IA aplicada." />
+  <meta name="twitter:image"       content="https://gremlinx.github.io/assets/images/og-cover.png" />
+  <meta name="twitter:image:alt"   content="Marcelo Ito — Fullstack Developer Portfolio" />
+
+  <!-- ═══════════════════════════════════════════
+       TEMA & PWA
+  ═══════════════════════════════════════════ -->
+  <meta name="theme-color" content="#d4a373" />
+  <meta name="color-scheme" content="light" />
+  <meta name="application-name" content="Marcelo Ito Portfolio" />
+  <meta name="apple-mobile-web-app-title"   content="Marcelo Ito" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="manifest" href="/manifest.json" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="/assets/images/favicon.ico" sizes="16x16 32x32" />
-  <link rel="apple-touch-icon" href="/assets/images/logo192.png" />
+  <!-- ═══════════════════════════════════════════
+       FAVICONS
+       Gere os arquivos em: https://realfavicongenerator.net
+  ═══════════════════════════════════════════ -->
+  <link rel="icon"             href="/assets/images/favicon.ico"    sizes="any" />
+  <link rel="icon"             href="/assets/images/favicon.svg"    type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
 
-  <title>Marcelo Ito - Web Developer Portfolio</title>
+  <!-- ═══════════════════════════════════════════
+       PERFORMANCE: preconnect para domínios externos
+  ═══════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- ═══════════════════════════════════════════
+       SCHEMA.ORG — dados estruturados (JSON-LD)
+       Ajuda Google a entender quem você é
+  ═══════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marcelo Ito",
+    "url": "https://gremlinx.github.io",
+    "jobTitle": "Fullstack Developer",
+    "description": "Desenvolvedor fullstack júnior especializado em .NET, Vue 3 e IA aplicada.",
+    "sameAs": [
+      "https://github.com/GremlinX",
+      "https://www.linkedin.com/in/marcelo-ito-/"
+    ],
+    "knowsAbout": [
+      "ASP.NET Core", "Vue 3", "PostgreSQL", "Machine Learning", "Python"
+    ]
+  }
+  </script>
 </head>
 
 <body>
