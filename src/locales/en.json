@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "about":      "About",
+    "projects":   "Projects",
+    "skills":     "Skills",
+    "experience": "Experience",
+    "contact":    "Contact"
+  },
+  "hero": {
+    "available":  "✦ Available for projects",
+    "title1":     "Full",
+    "title2":     "stack",
+    "title3":     "Developer",
+    "subtitle":   "Building complete digital experiences — from database to interface. .NET, Vue 3, and applied AI.",
+    "cta":        "View Projects",
+    "code": {
+      "comment":  "// Favorite stack",
+      "status":   "available ✓"
+    }
+  },
+  "marquee": {
+    "scroll": "Scroll"
+  },
+  "about": {
+    "label":      "About Me",
+    "title1":     "Code with",
+    "title2":     "purpose",
+    "title3":     "and care",
+    "bio1":       "My career in technology began with a Computer Science degree, later redirected toward Systems Analysis and Development. In parallel, I pursued continuous learning through courses, blogs, specialized articles, and especially personal projects.",
+    "bio2":       "From there, I was hired as a Quality Assurance engineer, responsible for system quality through detailed analysis and automated testing — a project I built from the ground up. I held this role for nearly four years, building a solid foundation in best practices, test automation, and software quality.",
+    "bio3":       "After that journey, I had the opportunity to work as a junior fullstack developer, which is the position I currently hold.",
+    "stats": {
+      "qa":             "+3",
+      "qaLabel":        "Years in QA",
+      "stack":          "Vue",
+      "stackLabel":     "+ .NET",
+      "curiosity":      "∞",
+      "curiosityLabel": "Curiosity"
+    },
+    "cv":       "Download CV",
+    "photoAlt": "Photo of Marcelo Ito"
+  },
+  "projects": {
+    "sectionNum":         "02",
+    "title":              "Projects",
+    "featured":           "✦ Main Project",
+    "featured-label":     "Productivity & Finances",
+    "items": [
+      {
+        "name":        "Minoru",
+        "description": "Full-stack productivity and personal finance app. Blog, Kanban, finances, AI-powered study sessions, Google OAuth authentication and PDF generation."
+      },
+      {
+        "name":        "RAG<br>Engine",
+        "description": "Retrieval-augmented generation system using Sentence-BERT, FAISS and the Gemini API."
+      },
+      {
+        "name":        "NLP<br>Pipeline",
+        "description": "Text classification with TF-IDF, Naive Bayes, SVM and DistilBERT fine-tuning."
+      },
+      {
+        "name":        "Email<br>Notifier",
+        "description": "Notification system using MailKit and Hangfire for background task scheduling."
+      },
+      {
+        "name":        "Discord<br>Bot",
+        "description": "Personal-use bot that reminds me to do Duolingo and sends the latest 4 news articles from Correio Braziliense via the NewsData API."
+      },
+      {
+        "name":        "Federal Tax Revenue Analysis<br>in Brazil (2000–2024)",
+        "description": "Exploratory and descriptive analysis of federal tax revenue data in Brazil, identifying trends, state/year variations, and the main factors influencing federal tax collection."
+      }
+    ]
+  },
+  "skills": {
+    "sectionNum": "03",
+    "title":      "Skills"
+  },
+  "experience": {
+    "sectionNum": "04",
+    "title":      "Experience",
+    "current":    "Current",
+    "items": [
+      {
+        "period":      "10/2021 — 06/2025",
+        "company":     "Skychart",
+        "role":        "Software Quality Assurance Analyst",
+        "description": "Acted as a Software Quality Analyst, actively collaborating with development teams in the validation, analysis, and continuous improvement of systems.\nPerformed manual testing and supported test automation using Cypress, contributing to the stability and quality of applications.\nAnalyzed demands and issues reported by clients, interpreted scenarios, and proposed solutions in conjunction with the teams.\nManipulated data in SQL databases, including corrections and validations based on information from external APIs.\nDeveloped scripts and bots to automate repetitive tasks, optimizing internal processes and increasing team productivity.\nParticipated in technical meetings, suggesting improvements to workflows, processes, and software quality."      },
+      {
+        "period":      "07/2025",
+        "company":     "Triveni Holding",
+        "role":        "Fullstack Developer",
+        "description": "Worked on the development and maintenance of web applications using Vue.js and .NET with Entity Framework.\nExperienced with code versioning using Git and the use of Docker for standardization and secure development environments.\nConstantly acted in code maintenance and refactoring, focusing on quality, readability, and best practices.\nUtilized tools such as SonarQube for code quality analysis.\nWorked in an agile environment, using Scrum for task organization and continuous delivery of solutions.\nCollaborated with internal teams on the support and evolution of systems used by different companies within the group."      }
+    ]
+  },
+  "contact": {
+    "eyebrow":  "✦ Let's talk",
+    "title1":   "Ready to",
+    "title2":   "build something",
+    "title3":   "amazing?",
+    "github":   "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "built":     "© 2025 — Built with Vue 3 + Claude AI",
+    "available": "✦ Available for freelance"
+  },
+  "splash": {
+    "role": "Fullstack Developer"
+  }
+}

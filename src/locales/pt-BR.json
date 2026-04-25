@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "about":      "Sobre",
+    "projects":   "Projetos",
+    "skills":     "Skills",
+    "experience": "Experiência",
+    "contact":    "Contato"
+  },
+  "hero": {
+    "available":  "✦ Disponível para projetos",
+    "title1":     "Full",
+    "title2":     "stack",
+    "title3":     "Developer",
+    "subtitle":   "Construindo experiências digitais completas — do banco de dados à interface. .NET, Vue 3, e IA aplicada.",
+    "cta":        "Ver Projetos",
+    "code": {
+      "comment":  "// Stack favorita",
+      "status":   "disponível ✓"
+    }
+  },
+  "marquee": {
+    "scroll": "Scroll"
+  },
+  "about": {
+    "label":      "Sobre Mim",
+    "title1":     "Código com",
+    "title2":     "propósito",
+    "title3":     "e cuidado",
+    "bio1":       "Minha carreira na área da tecnologia se inicia no curso de Ciência da Computação, posteriormente direcionada para Análise e Desenvolvimento de Sistemas. Paralelamente, busquei aprimorar meus conhecimentos por meio de cursos, blogs, artigos especializados e principalmente no desenvolvimento de projetos pessoais.",
+    "bio2":       "A partir daí, fui contratado para atuar como Quality Assurance atuando na garantia da qualidade de sistemas por meio de análises detalhadas e testes automatizados, ao qual eu fui responsável pelo desenvolvimento do projeto. Permaneci nessa função por quase quatro anos, consolidando uma base sólida em boas práticas, testes e automação, e qualidade de software.",
+    "bio3":       "Após esta jornada, tive a oportunidade de atuar como desenvolvedor fullstack júnior, posição em que estou atualmente.",
+    "stats": {
+      "qa":          "+3",
+      "qaLabel":     "Anos de QA",
+      "stack":       "Vue",
+      "stackLabel":  "+ .NET",
+      "curiosity":   "∞",
+      "curiosityLabel": "Curiosidade"
+    },
+    "cv":          "Download CV",
+    "photoAlt":    "Foto de Marcelo Ito"
+  },
+  "projects": {
+    "sectionNum":         "02",
+    "title":              "Projetos",
+    "featured":           "✦ Projeto Principal",
+    "featured-label":     "Produtividade & Finanças",
+    "items": [
+      {
+        "name":        "Minoru",
+        "description": "Aplicação full-stack de produtividade e finanças pessoais. Blog, Kanban, finanças, sessões de estudo com IA, autenticação Google OAuth e geração de PDFs."
+      },
+      {
+        "name":        "RAG<br>Engine",
+        "description": "Sistema de retrieval-augmented generation com Sentence-BERT, FAISS e Gemini API."
+      },
+      {
+        "name":        "NLP<br>Pipeline",
+        "description": "Classificação de texto com TF-IDF, Naive Bayes, SVM e fine-tuning de DistilBERT."
+      },
+      {
+        "name":        "Email<br>Notifier",
+        "description": "Sistema de notificações com MailKit e Hangfire para agendamento de tarefas em background."
+      },
+      {
+        "name":        "Discord<br>Bot",
+        "description": "Projeto simples para finalidades pessoais. O bot é responsável por me avisar de fazer o Duolingo e enviar as últimas 4 notícias publicadas pelo Correio Braziliense, através da API NewsData."
+      },
+      {
+        "name":        "Análise de Arrecadação de Impostos Federais no Brasil<br>(2000–2024)",
+        "description": "Análise exploratória e descritiva dos dados de arrecadação de impostos federais no Brasil, identificando tendências, variações por estado/ano e os principais fatores que influenciaram a arrecadação federal."
+      }
+    ]
+  },
+  "skills": {
+    "sectionNum": "03",
+    "title":      "Skills"
+  },
+  "experience": {
+    "sectionNum": "04",
+    "title":      "Experiência",
+    "current":    "Atual",
+    "items": [
+      {
+        "period":      "10/2021 — 06/2025",
+        "company":     "Skychart",
+        "role":        "Analista de Qualidade de Software",
+        "description": "Atuação como Analista de Qualidade de Software, colaborando ativamente com times de desenvolvimento na validação, análise e melhoria contínua de sistemas.\nRealização de testes manuais e apoio à automação de testes utilizando Cypress, contribuindo para a estabilidade e qualidade das aplicações.\nAnálise de demandas e problemas reportados por clientes, interpretação de cenários e proposição de soluções em conjunto com as equipes.\nManipulação de dados em banco SQL, incluindo correções e validações com base em informações provenientes de APIs externas.\nDesenvolvimento de scripts e bots para automação de tarefas repetitivas, otimizando processos internos e aumentando a produtividade do time.\nParticipação em reuniões técnicas, sugerindo melhorias em fluxos, processos e qualidade do software."
+      },
+      {
+        "period":      "07/2025",
+        "company":     "Triveni Holding",
+        "role":        "Fullstack Developer",
+        "description": "Atuação no desenvolvimento e manutenção de aplicações web, utilizando Vue.js e .NET com Entity Framework.\nExperiência com versionamento de código utilizando Git e uso de Docker para padronização e ambientes de desenvolvimento seguro.\nAtuação constante em manutenção e refatoração de código, com foco em qualidade, legibilidade e boas práticas.\nUtilização de ferramentas como SonarQube para análise de qualidade de código.\nAtuação em ambiente ágil, utilizando Scrum para organização das atividades e entrega contínua de soluções.\nColaboração com equipes internas no suporte e evolução de sistemas utilizados por diferentes empresas do grupo."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow":  "✦ Vamos conversar",
+    "title1":   "Pronto para",
+    "title2":   "criar algo",
+    "title3":   "incrível?",
+    "github":   "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "built":     "© 2025 — Desenvolvido com Vue 3 + Claude AI",
+    "available": "✦ Disponível para freelance"
+  },
+  "splash": {
+    "role": "Fullstack Developer"
+  }
+}

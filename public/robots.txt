@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gremlinx.github.io/sitemap.xml
