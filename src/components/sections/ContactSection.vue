@@ -12,7 +12,7 @@ const t      = computed(() => locale.t)
 const EMAIL = 'marcelo-ito@hotmail.com'
 
 const links = computed(() => [
-  { label: t.value.contact.github,   href: 'https://github.com/GremlinX' },
+  { label: t.value.contact.github,   href: 'https://github.com/marcelo-ito' },
   { label: t.value.contact.linkedin, href: 'https://www.linkedin.com/in/marcelo-ito-/' },
 ])
 
